@@ -1,0 +1,16 @@
+import time
+amount_of_time = int(input("Enter how many seconds you would like the timer to run for: "))
+
+i = 0
+
+while i < (amount_of_time + 1):
+    print(i)
+    i += 1
+    time.sleep(0.1)
+
+    if i % 60 == 0:
+    #this checks to see if i can be divided and have a remainer of 0
+    # ie. if i is a multiple of 60
+        print("It has been " + str(i/60) + " minutes")
+
+print(f"Your timer for {amount_of_time} seconds has finished.")
